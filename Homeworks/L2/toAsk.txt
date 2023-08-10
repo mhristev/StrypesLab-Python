@@ -7,8 +7,12 @@
 - отново може да се използва сет, но това ли е идеята или по-скоро е да използваме наш алговитъм
 за махане на дупликати
 - сортира ли се накрая?
-
+ne e nujno da se sortira
 
 квадратно уравнение
 
 спешъл кейс е когато уравнението не е квадратно ли?
+kogato a i b sa nula
+
+
+ako imam dva korena koito sa edni i sushti izkarvae samo ediniq 

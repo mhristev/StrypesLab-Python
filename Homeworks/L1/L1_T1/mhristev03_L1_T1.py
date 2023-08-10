@@ -2,12 +2,14 @@ import sys
 import math
 
 def solve_quadratic_equation(a, b, c):
-    
-    if a == 0 or b == 0 or c == 0:
-        return "special case"
+    if a == 0:
+        if b == 0:
+            return "special case"
+        x = -c/b
+        return x
     
     D = b**2 - 4*a*c
-
+    
     if D > 0:
         x1 = (-b + math.sqrt(D)) / (2*a)
         x2 = (-b - math.sqrt(D)) / (2*a)
