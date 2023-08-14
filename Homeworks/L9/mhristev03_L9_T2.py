@@ -33,8 +33,3 @@ filename, word = sys.argv[1], sys.argv[2]
 stem_dict = load_stem_file(filename)
 
 print(find_base_form(word, stem_dict))
-
-# if base_form:
-#     print(f"Base form of '{target_word}' is '{base_form}'.")
-# else:
-#     print(f"'{target_word}' not found in the stem dictionary.")
