@@ -37,5 +37,8 @@ class Student(SchoolMember):
 
     def getAvgGrade(self, signature):
         if signature in self.courses:
-            return sum(self.courses[signature]['grades']) / len(self.courses[signature]['grades'])
+            if len(self.courses[signature]['grades']) > 0:
+                return sum(self.courses[signature]['grades']) / len(self.courses[signature]['grades'])
+            else:
+                return 0
         
