@@ -24,9 +24,9 @@ def load_stem_file(filename):
     return stem_dict
 
 def find_base_form(word, stem_dict):
-    if word in stem_dict:
-        return stem_dict[word]
-
+    for key, value in stem_dict.items():
+        if key.lower() == word.lower():
+            return value
 
 filename, word = sys.argv[1], sys.argv[2]
 

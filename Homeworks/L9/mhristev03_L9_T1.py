@@ -14,7 +14,7 @@ def sort_lines(input_file, output_file):
 
     formated_lines = [item.strip() + '\n' for item in lines]
     sorted_lines = sorted(formated_lines)
-    sorted_lines[-1] = sorted_lines[-1].rstrip('\n')
+
     
     with open(output_file, 'w') as file:
         file.writelines(sorted_lines)

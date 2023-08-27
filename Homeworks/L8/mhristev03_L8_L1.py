@@ -62,7 +62,7 @@ def bisection(a, b, f, tol=0.001, max_iterations=500):
         if iterations >= max_iterations:
             raise ValueError("Bisection method did not converge within the maximum number of iterations.")
     
-    return (c, iterations)
+    return c
 
 def f(x):
     return x**3+3*x-5.0
@@ -79,8 +79,7 @@ def main():
         try:
             a = float(input("Enter the first number: "))
             b = float(input("Enter the second number: "))
-            root, iterations = bisection(a, b, f)
-            print(f"Approximate root: {root}, iterations: {iterations}")
+            root = bisection(a, b, f)
             print(f"Function value at root: {f(root)}")
             break 
         except ValueError as e:

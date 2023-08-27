@@ -1,6 +1,5 @@
 A
 C
-c
-o
+a c
 l
-a
+o
