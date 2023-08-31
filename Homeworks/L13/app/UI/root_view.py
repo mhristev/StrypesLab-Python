@@ -2,6 +2,7 @@ from datetime import datetime
 import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
+import os
 
 from BL.managers.author_manager import AuthorManager
 from BL.managers.developer_manager import DeveloperManager
@@ -46,13 +47,18 @@ class RootView(ttk.Frame):
         self.collection_dropdown.set("Movies")
         self.collection_dropdown.bind("<<ComboboxSelected>>", self.on_collection_selected)
         
-        add_img = tk.PhotoImage(file="remove.png").subsample(4, 4)
+        image_dir = 'imgs'
+        image_path = os.path.join(image_dir, "remove.png")
+        
+        add_img = tk.PhotoImage(file=image_path).subsample(4, 4)
         button = ttk.Button(menu_frame,image=add_img,  text="Delete", compound="left", command=self.delete_selected)
         button.image = add_img
         button.pack(side=tk.RIGHT, padx=5, pady=2)
         
-        add_img = tk.PhotoImage(file="plus.png").subsample(4, 4)
-        button = ttk.Button(menu_frame,image=add_img,  text="Create", compound="left", command=self.create_movie_window)
+        image_path = os.path.join(image_dir, "plus.png")
+
+        add_img = tk.PhotoImage(file=image_path).subsample(4, 4)
+        button = ttk.Button(menu_frame,image=add_img,  text="Create", compound="left", command=self.open_create_media_window)
         button.image = add_img
         button.pack(side=tk.RIGHT, padx=5, pady=2)
         
@@ -78,6 +84,9 @@ class RootView(ttk.Frame):
 
         search_button = ttk.Button(frame, text="Search", command=self.search)
         search_button.grid(row=0, column=11, padx=5)
+        
+        search_button = ttk.Button(frame, text="Refresh", command=self.refresh_tree)
+        search_button.grid(row=0, column=12, padx=5)
 
         self.tree = ttk.Treeview(movie_list_section, columns=("id", "title", "genre"), show="headings")
         self.tree.pack(fill=tk.BOTH, expand=True)
@@ -93,8 +102,23 @@ class RootView(ttk.Frame):
         for movie in movies:
             self.tree.insert("", "end", values=([movie.id, movie.title, movie.genre]))
             
-        self.tree.bind("<<TreeviewSelect>>", self.on_movie_select) 
+        self.tree.bind("<<TreeviewSelect>>", self.on_media_select) 
     
+    def refresh_tree(self):
+        collection = self.collection_dropdown.get()
+        self.clear_tree()
+        
+        filtered_items = None
+        
+        if collection == "Movies":
+            filtered_items = self.movie_manager.get_all_movies()
+        elif collection == "Books":
+            filtered_items = self.book_manager.get_all_books()
+        elif collection == "Games":
+            filtered_items = self.game_manager.get_all_games()
+        
+        self.insert_filtered_items(filtered_items)
+        
     def search(self):
         search_text = self.entry_search.get()
         search_by = self.search_by_var.get()
@@ -165,8 +189,10 @@ class RootView(ttk.Frame):
         labels_frame = tk.Frame(self.details_section)
         labels_frame.pack()
         if media.image_path == "":
-            media.image_path = "imgs/plus.png"
-        resized_image = self.resize_image(media.image_path, 100, 100)
+            image_dir = 'imgs'
+            media.image_path = os.path.join(image_dir, "cat.png")
+        
+        resized_image = self.resize_image(media.image_path, 150, 150)
         
         button = ttk.Label(labels_frame, image=resized_image)
         button.grid(row=0, column=0, rowspan=10, padx=30, pady=10, sticky="w")
@@ -224,7 +250,7 @@ class RootView(ttk.Frame):
         elif isinstance(media, Game):
             game_attrs = [
                 ("Platform:", media.platform),
-                ("Multiplayer Mode (Yes/No):", "Yes" if media.multiplayer_mode else "No"),
+                # ("Multiplayer Mode (Yes/No):", "Yes" if media.multiplayer_mode else "No"),
             ]
             
             label = tk.Label(labels_frame, text="Developer:", width=20, anchor="w")
@@ -240,14 +266,22 @@ class RootView(ttk.Frame):
                 if id_ == media.developer.id and name == media.developer.name:
                     developer_combobox.current(index)
                     break
+                
+            self.multiplayer_var = tk.IntVar()
+            
+            multiplayer_check = tk.Checkbutton(labels_frame, text="Multiplayer Mode", variable=self.multiplayer_var, onvalue=1, offvalue=0)
+            multiplayer_check.grid(row=1, column=4)
+            
+            if media.multiplayer_mode:
+                self.multiplayer_var.set(1)
             
             for i, (label_text, default_value) in enumerate(game_attrs):
                 label = tk.Label(labels_frame, text=label_text, width=20, anchor="w")
-                label.grid(row=i+1, column=3, sticky="w")
+                label.grid(row=i+2, column=3, sticky="w")
 
                 entry = tk.Entry(labels_frame)
                 entry.insert(0, default_value)
-                entry.grid(row=i+1, column=4, sticky="w")
+                entry.grid(row=i+2, column=4, sticky="w")
         
         elif isinstance(media, Book):
             label = tk.Label(labels_frame, text="Author:", width=20, anchor="w")
@@ -308,7 +342,9 @@ class RootView(ttk.Frame):
         for child in self.details_section.winfo_children():
             if isinstance(child, tk.Frame):
                 for c in child.winfo_children():
-                    if isinstance(c, tk.Label):
+                    if isinstance(c, tk.Checkbutton):
+                        values.append(self.multiplayer_var.get())
+                    elif isinstance(c, tk.Label):
                         txt = c.cget("text")
                         if txt == "Author:":
                             media_type = "book"
@@ -316,7 +352,7 @@ class RootView(ttk.Frame):
                             media_type = "movie"
                         elif txt == "Developer:":
                             media_type = "game"
-                    if isinstance(c, ttk.Combobox):
+                    elif isinstance(c, ttk.Combobox):
                         selected_value = c.get()
                         if selected_value in ["English", "Spanish", "French", "German", "Japanese", "Bulgarian", "Other"]:
                             values.append(selected_value)
@@ -349,10 +385,7 @@ class RootView(ttk.Frame):
             book = Book(id=media_id, title=title, release_date=release_date, genre=genre, page_count=page_count, synopsis=synopsis, language=language, image_path="", author=Author(author_id, author_name))
             self.book_manager.update_book(book)
         elif media_type == "game":
-            media_id, title, release_date, genre, synopsis, developer_id, developer_name, platform, multiplayer_mode = values
-            if multiplayer_mode not in ["Yes", "No"]:
-                messagebox.showerror("Error", "Invalid mode")
-                return
+            media_id, title, release_date, genre, synopsis, developer_id, developer_name, multiplayer_mode, platform = values
             game = Game(id=media_id, title=title, release_date=release_date, genre=genre, synopsis=synopsis, image_path="", developer=Developer(developer_id, developer_name), platform=platform, multiplayer_mode=multiplayer_mode)
             self.game_manager.update_game(game)
         elif media_type == "movie":
@@ -360,6 +393,19 @@ class RootView(ttk.Frame):
             movie = Movie(id=media_id, title=title, release_date=release_date, genre=genre, synopsis=synopsis, director=Director(director_id, director_name), runtime_in_minutes=runtime, language=language, country=country, image_path="")
             self.movie_manager.update_movie(movie)
 
+        self.update_row(media_id=values[0], new_name=values[1], new_genre=values[3])
+        messagebox.showinfo("Success", f"Media updated successfully!")
+        
+    def update_row(self, media_id, new_name, new_genre):
+        item_id = None
+        for item in self.tree.get_children():
+            if self.tree.item(item, "values")[0] == media_id:
+                item_id = item
+                break
+        
+        if item_id:
+            self.tree.item(item_id, values=(media_id, new_name, new_genre)) 
+       
     def detect_media_type(self):
         children = self.details_section.winfo_children()
         for child in children:
@@ -382,7 +428,7 @@ class RootView(ttk.Frame):
         except ValueError:
             return False
 
-    def on_movie_select(self, event):
+    def on_media_select(self, event):
         selected_item = self.tree.selection()
         if selected_item:
             item_values = self.tree.item(selected_item[0], "values")
@@ -402,7 +448,7 @@ class RootView(ttk.Frame):
                 self.create_details_section(media)
 
         
-    def create_movie_window(self):
+    def open_create_media_window(self):
         def callback(text):
                 if self.collection_dropdown.get() == "Movies":
                     media = self.movie_manager.get_movie_by_id(text)
@@ -429,6 +475,8 @@ class RootView(ttk.Frame):
                     if confirm:
                         self.tree.delete(selected_index)
                         self.movie_manager.delete_movie(id)
+                        first_item_id = self.tree.get_children()[0]
+                        self.tree.selection_set(first_item_id)    
                 
     def on_collection_selected(self, event):
         selected_collection = self.collection_dropdown.get()

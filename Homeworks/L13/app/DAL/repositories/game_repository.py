@@ -30,9 +30,9 @@ class GameRepository:
 
     def update_game(self, game_id, title, release_date, genre, synopsis, image_path, developer_id, platform, multiplayer_mode):
         self.base_repository.cursor.execute("""
-            UPDATE Media SET title=?, release_date=?, genre=?, synopsis=?, image_path=?
+            UPDATE Media SET title=?, release_date=?, genre=?, synopsis=?
             WHERE id=?;
-        """, (title, release_date, genre, synopsis, image_path, game_id))
+        """, (title, release_date, genre, synopsis, game_id))
 
         self.base_repository.cursor.execute("""
             UPDATE Game SET developer_id=?, platform=?, multiplayer_mode=?

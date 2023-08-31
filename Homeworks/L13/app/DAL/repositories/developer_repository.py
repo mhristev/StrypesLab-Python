@@ -6,7 +6,7 @@ class DeveloperRepository:
 
     def create_developer(self, name):
         self.base_repository.cursor.execute("INSERT INTO Developer (name) VALUES (?)", (name, ))
-        dev_id = self.cursor.lastrowid
+        dev_id = self.base_repository.cursor.lastrowid
 
         self.base_repository.conn.commit()
         return dev_id

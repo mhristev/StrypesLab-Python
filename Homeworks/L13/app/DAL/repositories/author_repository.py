@@ -6,7 +6,7 @@ class AuthorRepository:
 
     def create_author(self, name):
         self.base_repository.cursor.execute("INSERT INTO Author (name) VALUES (?)", (name,))
-        author_id = self.cursor.lastrowid
+        author_id = self.base_repository.cursor.lastrowid
 
         self.base_repository.conn.commit()
         return author_id

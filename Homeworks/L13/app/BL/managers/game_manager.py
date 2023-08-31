@@ -33,7 +33,7 @@ class GameManager:
         else:
             creator_id = game.developer.id
         
-        self.repository.update_game(game.id, game.title, game.release_date, game.genre, game.synopsis, game.image_path, creator_id, game.platform, game.multiplayer_mode)
+        self.repository.update_game(game.id, game.title, game.release_date, game.genre, game.synopsis, game.image_path, creator_id, game.platform, int(game.multiplayer_mode))
         
 
     def delete_game(self, game_id):

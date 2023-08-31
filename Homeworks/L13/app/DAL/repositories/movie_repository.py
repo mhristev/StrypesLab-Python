@@ -9,7 +9,7 @@ class MovieRepository:
         
         self.base_repository.cursor.execute("INSERT INTO Media (title, release_date, genre, synopsis, image_path) VALUES (?, ?, ?, ?, ?)",
                             (title, release_date, genre, synopsis, image_path))
-        media_id = self.cursor.lastrowid
+        media_id = self.base_repository.cursor.lastrowid
 
         self.base_repository.cursor.execute("INSERT INTO Movie (media_id, director_id, runtime_in_minutes, language, country) VALUES (?, ?, ?, ?, ?)",
                             (media_id, director_id, runtime_in_minutes, language, country))
@@ -31,9 +31,9 @@ class MovieRepository:
 
     def update_movie(self, movie_id, title, release_date, genre, synopsis, image_path, director_id, runtime_in_minutes,language, country):
         self.base_repository.cursor.execute("""
-            UPDATE Media SET title=?, release_date=?, genre=?, synopsis=?, image_path=?
+            UPDATE Media SET title=?, release_date=?, genre=?, synopsis=?
             WHERE id=?;
-        """, (title, release_date, genre, synopsis, image_path, movie_id))
+        """, (title, release_date, genre, synopsis, movie_id))
 
         self.base_repository.cursor.execute("""
             UPDATE Movie SET director_id=?, runtime_in_minutes=?, language=?, country=?

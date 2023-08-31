@@ -30,9 +30,9 @@ class BookRepository:
 
     def update_book(self, book_id, title, release_date, genre, synopsis, image_path, author_id, page_count, language):
         self.base_repository.cursor.execute("""
-            UPDATE Media SET title=?, release_date=?, genre=?, synopsis=?, image_path=?
+            UPDATE Media SET title=?, release_date=?, genre=?, synopsis=?
             WHERE id=?;
-        """, (title, release_date, genre, synopsis, image_path, book_id))
+        """, (title, release_date, genre, synopsis, book_id))
 
         self.base_repository.cursor.execute("""
             UPDATE Book SET author_id=?, page_count=?, language=?

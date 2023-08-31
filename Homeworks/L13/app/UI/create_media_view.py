@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
-from tkcalendar import Calendar, DateEntry
 import os
 import uuid
 from datetime import datetime
@@ -30,7 +29,7 @@ class CreateMediaView(tk.Toplevel):
         if media_type.lower() == "games":
             self.game_manager = GameManager()
         
-        self.title(f"Create {media_type.capitalize()}")
+        self.title(f"Create {media_type.capitalize()[:-1]}")
         left_frame = tk.Frame(self)
         left_frame.grid(row=0, column=0, padx=10, pady=10)
 
@@ -49,23 +48,13 @@ class CreateMediaView(tk.Toplevel):
             self.director_combobox.grid(row=2, column=1)
           
             self.director_manager = DirectorManager()
-            self.director_names = self.director_manager.get_all_directors()  # Replace with actual director names
+            self.director_names = self.director_manager.get_all_directors()
             self.director_combobox['values'] = self.director_names
 
             tk.Label(left_frame, text="Runtime (minutes):").grid(row=3, column=0, sticky="w")
             self.runtime_entry = tk.Entry(left_frame, validate="key")
             self.runtime_entry.configure(validatecommand=(self.runtime_entry.register(self.validate_int), "%P"))
             self.runtime_entry.grid(row=3, column=1)
-            
-            tk.Label(left_frame, text="Language:").grid(row=5, column=0, sticky="w")
-            self.language_var = tk.StringVar()
-            self.language_combobox = ttk.Combobox(left_frame, textvariable=self.language_var, state="readonly")
-            self.language_combobox['values'] = ["English", "Spanish", "French", "German", "Japanese", "Bulgarian", "Other"]
-            self.language_combobox.grid(row=5, column=1)
-
-            tk.Label(left_frame, text="Country:").grid(row=6, column=0, sticky="w")
-            self.country_entry = tk.Entry(left_frame)
-            self.country_entry.grid(row=6, column=1)
 
             tk.Label(left_frame, text="Language:").grid(row=5, column=0, sticky="w")
             self.language_var = tk.StringVar()
@@ -78,17 +67,13 @@ class CreateMediaView(tk.Toplevel):
             self.country_entry = ttk.Entry(left_frame)
             self.country_entry.grid(row=6, column=1)
 
-            tk.Label(left_frame, text="Country:").grid(row=6, column=0, sticky="w")
-            self.country_entry = tk.Entry(left_frame)
-            self.country_entry.grid(row=6, column=1)
-
         elif media_type.lower() == "books":
             tk.Label(left_frame, text="Author:").grid(row=2, column=0, sticky="w")
             self.author_combobox = ttk.Combobox(left_frame)
             self.author_combobox.grid(row=2, column=1)
           
             self.author_manager = AuthorManager()
-            self.author_names = self.author_manager.get_all_authors()  # Replace with actual director names
+            self.author_names = self.author_manager.get_all_authors()
             self.author_combobox['values'] = self.author_names
             
             tk.Label(left_frame, text="Page Count:").grid(row=3, column=0, sticky="w")
@@ -96,11 +81,11 @@ class CreateMediaView(tk.Toplevel):
             self.page_count_entry.configure(validatecommand=(self.page_count_entry.register(self.validate_int), "%P"))
             self.page_count_entry.grid(row=3, column=1)
 
-            tk.Label(left_frame, text="Language:").grid(row=4, column=0, sticky="w")
+            tk.Label(left_frame, text="Language:").grid(row=5, column=0, sticky="w")
             self.language_var = tk.StringVar()
-            self.language_combobox = ttk.Combobox(left_frame, textvariable=self.language_var)
+            self.language_combobox = ttk.Combobox(left_frame, textvariable=self.language_var, state="readonly")
             self.language_combobox['values'] = ["English", "Spanish", "French", "German", "Japanese", "Bulgarian", "Other"]
-            self.language_combobox.grid(row=4, column=1)
+            self.language_combobox.grid(row=5, column=1)
             self.language_combobox.bind("<Key>", self.prevent_custom_input)
             
             tk.Label(left_frame, text="Country:").grid(row=6, column=0, sticky="w")
@@ -114,7 +99,7 @@ class CreateMediaView(tk.Toplevel):
             self.developer_combobox.grid(row=2, column=1)
           
             self.developer_manager = DeveloperManager()
-            self.developer_names = self.developer_manager.get_all_developers()  # Replace with actual director names
+            self.developer_names = self.developer_manager.get_all_developers()
             self.developer_combobox['values'] = self.developer_names
             
             
@@ -123,7 +108,7 @@ class CreateMediaView(tk.Toplevel):
             self.platform_entry.grid(row=3, column=1)
 
             self.multiplayer_var = tk.BooleanVar()
-            self.multiplayer_check = tk.Checkbutton(left_frame, text="Multiplayer Mode (Yes/No):", variable=self.multiplayer_var)
+            self.multiplayer_check = tk.Checkbutton(left_frame, text="Multiplayer Mode:", variable=self.multiplayer_var)
             self.multiplayer_check.grid(row=4, column=0, columnspan=2)
 
         right_frame = tk.Frame(self)
@@ -165,7 +150,7 @@ class CreateMediaView(tk.Toplevel):
             os.makedirs("imgs", exist_ok=True)
             shutil.copy2(self.image_path, dest_path) 
             
-            messagebox.showinfo("Success", f"Movie created successfully!")
+
             return dest_path
         except Exception as e:
             messagebox.showerror("Error", f"An error occurred: {e}")
@@ -191,7 +176,7 @@ class CreateMediaView(tk.Toplevel):
             messagebox.showerror("Error", "Please choose an image")
             return
         
-        if title == "" or genre == "" or release_date is "" or synopsis == "":
+        if title == "" or genre == "" or release_date == "" or synopsis == "":
             messagebox.showerror("Error", "Please fill in all required fields.")
             return
         
@@ -212,10 +197,6 @@ class CreateMediaView(tk.Toplevel):
                 messagebox.showerror("Error", "Please fill in all required fields.")
                 return
             
-            if not runtime_in_minutes.isdigit():
-                messagebox.showerror("Error", "Runtime must be a valid number.")
-                return
-            
             if self.director_combobox.current() == -1:
                 director_id= None
                 new_dir_name = director.strip()
@@ -232,6 +213,7 @@ class CreateMediaView(tk.Toplevel):
 
             movie_id = self.movie_manager.create_movie(movie)
             self.callback(movie_id)
+            messagebox.showinfo("Success", f"Movie created successfully!")
             self.destroy()
         elif hasattr(self, 'author_combobox'):
             author = self.author_combobox.get()
@@ -242,13 +224,9 @@ class CreateMediaView(tk.Toplevel):
                 messagebox.showerror("Error", "Please fill in all required fields.")
                 return
             
-            if not page_count.isdigit():
-                messagebox.showerror("Error", "Runtime must be a valid number.")
-                return
-            
             author_id = None
             new_auth_name = ""
-            
+            dest_path = self.save_image()
             if self.author_combobox.current() == -1:
                 author_id = None
                 new_auth_name = author.strip()
@@ -257,17 +235,18 @@ class CreateMediaView(tk.Toplevel):
             
             
             book = Book (id=0, title=title, genre=genre, release_date=release_date, synopsis=synopsis, \
-                        author=Author(author_id, new_auth_name), page_count=page_count, language=language, image_path="")
+                        author=Author(author_id, new_auth_name), page_count=page_count, language=language, image_path=dest_path)
 
             book_id = self.book_manager.create_book(book)
             self.callback(book_id)
+            messagebox.showinfo("Success", f"Book created successfully!")
             self.destroy()
             
         elif hasattr(self, 'developer_combobox'):
             developer = self.developer_combobox.get()
             platform = self.platform_entry.get()
             multiplayer_mode = self.multiplayer_var.get()
-            
+            dest_path = self.save_image()
             if developer == "" or platform == "":
                 messagebox.showerror("Error", "Please fill in all required fields.")
                 return
@@ -281,10 +260,11 @@ class CreateMediaView(tk.Toplevel):
                 dev_id = developer.split(' ')[0]
              
             game = Game(id=0, title=title, genre=genre, release_date=release_date, synopsis=synopsis, \
-                developer=Developer(id=dev_id, name=new_dev_name), platform=platform, image_path="", multiplayer_mode=multiplayer_mode)
+                developer=Developer(id=dev_id, name=new_dev_name), platform=platform, image_path=dest_path, multiplayer_mode=multiplayer_mode)
             
             game_id = self.game_manager.create_game(game)
             self.callback(game_id)
+            messagebox.showinfo("Success", f"Game created successfully!")
             self.destroy()
 
     def validate_int(self, value):
