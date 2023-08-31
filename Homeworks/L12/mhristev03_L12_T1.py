@@ -42,6 +42,6 @@ cursor = connection.cursor()
 cursor.execute(query)
 result = cursor.fetchone()
 
-print(result[0])
+print(result)
 
 connection.close()

@@ -1,4 +1,10 @@
-from DAL.parsers.game_parser import GameParser
+from UI.root_view import RootView
+import tkinter as tk
 
+root = tk.Tk()
+root.title("Movie App")
+ 
+menu = RootView(root)
+menu.pack()
 
-print(GameParser.parse_game_result(None))
+root.mainloop()

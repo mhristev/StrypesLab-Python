@@ -1,21 +1,26 @@
+from BL.models.developer import Developer
 from BL.models.game import Game
 
 class GameParser:
     @staticmethod
-    def parse_game_result(result):
-        if result is None:
-            return None
+    def parse_game_result(results):
+        games = []
 
-        media_id, title, release_date, genre, synopsis, image_path, developer, platform, multiplayer_mode = result
-        
-        return Game(
-            media_id,
-            title,
-            genre,
-            release_date,
-            developer,
-            platform,
-            synopsis,
-            bool(multiplayer_mode),
-            image_path
-        )
+        for result in results:
+            media_id, title, release_date, genre, synopsis, image_path, \
+            dev_id, developer_name, platform, multiplayer_mode = result
+            
+            game = Game(
+                id=media_id,
+                title=title, 
+                developer=Developer(dev_id, developer_name),
+                release_date=release_date,
+                genre=genre,
+                platform=platform,
+                multiplayer_mode=bool(multiplayer_mode),
+                synopsis=synopsis,
+                image_path=image_path
+            )
+            games.append(game)
+
+        return games
