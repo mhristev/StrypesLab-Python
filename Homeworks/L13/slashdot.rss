@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:admin="http://webns.net/mvcb/"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+>
+
+<channel rdf:about="https://slashdot.org/">
+<title>Slashdot</title>
+<link>https://slashdot.org/</link>
+<description>News for nerds, stuff that matters</description>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright 1997-2016, SlashdotMedia. All Rights Reserved.</dc:rights>
+<dc:date>2023-09-02T10:33:12+00:00</dc:date>
+<dc:publisher>Dice</dc:publisher>
+<dc:creator>help@slashdot.org</dc:creator>
+<dc:subject>Technology</dc:subject>
+<syn:updateBase>1970-01-01T00:00+00:00</syn:updateBase>
+<syn:updateFrequency>1</syn:updateFrequency>
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="https://science.slashdot.org/story/23/09/02/0150234/a-biotech-company-says-it-put-dopamine-making-cells-into-peoples-brains?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://entertainment.slashdot.org/story/23/09/02/0017225/pentagons-new-ufo-website-lets-you-explore-declassified-sightings-info?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://news.slashdot.org/story/23/09/02/0010246/population-collapse-almost-wiped-out-human-ancestors-say-scientists?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://yro.slashdot.org/story/23/09/02/000207/nypd-to-deploy-drones-to-monitor-backyard-parties-this-holiday-weekend?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://yro.slashdot.org/story/23/09/01/2315228/microsoft-patents-sensor-filled-ai-assisted-backpack?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://news.slashdot.org/story/23/09/01/237204/caltech-to-accept-khan-academy-success-as-option-for-admission?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://hardware.slashdot.org/story/23/09/01/2246211/nissan-begins-repurposing-leaf-car-batteries-as-portable-power-stations?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://hardware.slashdot.org/story/23/09/01/2239233/lenovos-new-27-inch-4k-monitor-offers-glasses-free-3d?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://yro.slashdot.org/story/23/09/01/2227255/robinhood-bought-back-sam-bankman-frieds-stake-from-us-government-for-606-million?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://yro.slashdot.org/story/23/09/01/2139242/hacker-gains-admin-control-of-sourcegraph-and-gives-free-access-to-the-masses?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://it.slashdot.org/story/23/09/01/1955206/samsung-unveils-industrys-first-32gbit-ddr5-memory-die?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://slashdot.org/story/23/09/01/1937248/nvidia-quietly-cuts-price-of-poorly-reviewed-16gb-4060-ti-ahead-of-amd-launch?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://science.slashdot.org/story/23/09/01/1838208/india-seeks-to-top-its-moon-landing-with-spacecraft-to-study-sun?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://news.slashdot.org/story/23/09/01/1828253/japan-is-preparing-for-a-massive-earthquake?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://entertainment.slashdot.org/story/23/09/01/1748216/spotify-to-cut-back-promotional-spending-on-white-noise-podcasts?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+ </rdf:Seq>
+</items>
+<image rdf:resource="https://a.fsdn.com/sd/topics/topicslashdot.gif" />
+<textinput rdf:resource="https://slashdot.org/search.pl" />
+</channel>
+<image rdf:about="https://a.fsdn.com/sd/topics/topicslashdot.gif">
+<title>Slashdot</title>
+<url>https://a.fsdn.com/sd/topics/topicslashdot.gif</url>
+<link>https://slashdot.org/</link>
+</image>
+<item rdf:about="https://science.slashdot.org/story/23/09/02/0150234/a-biotech-company-says-it-put-dopamine-making-cells-into-peoples-brains?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>A Biotech Company Says It Put Dopamine-Making Cells Into People's Brains</title>
+<link>https://science.slashdot.org/story/23/09/02/0150234/a-biotech-company-says-it-put-dopamine-making-cells-into-peoples-brains?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>A biotech company has conducted a small-scale trial involving the implantation of lab-made neurons into the brains of 12 people with Parkinson's disease. The implanted neurons are designed to produce dopamine, which is deficient in Parkinson's patients, and early data suggests they may have survived and improved symptoms in some cases. MIT Technology Review reports: The study is one of the largest and most costly tests yet of embryonic-stem-cell technology, the controversial and much-hyped approach of using stem cells taken from IVF embryos to produce replacement tissue and body parts. The replacement neurons were manufactured using powerful stem cells originally sourced from a human embryo created an in vitro fertilization procedure. According to data presented by Henchliffe and others on August 28 at the International Congress for Parkinson's Disease and Movement Disorder in Copenhagen, there are also hints that the added cells had survived and were reducing patients' symptoms a year after the treatment.
+ 
+These clues that the transplants helped came from brain scans that showed an increase in dopamine cells in the patients' brains as well as a decrease in "off time," or the number of hours per day the volunteers felt they were incapacitated by their symptoms. However, outside experts expressed caution in interpreting the findings, saying they seemed to show inconsistent effects -- some of which might be due to the placebo effect, not the treatment. Because researchers can't see the cells directly once they are in a person's head, they instead track their presence by giving people a radioactive precursor to dopamine and then watching its uptake in their brains in a PET scanner. "It is encouraging that the trial has not led to any safety concerns and that there may be some benefits," says Roger Barker, who studies Parkinson's disease at the University of Cambridge. But Barker called the evidence the transplanted cells had survived "a bit disappointing."
+ 
+He said the results were not so strong, adding that it's "still a bit too early to know" whether the transplanted cells took hold and repaired the patients' brains.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=A+Biotech+Company+Says+It+Put+Dopamine-Making+Cells+Into+People's+Brains%3A+https%3A%2F%2Fscience.slashdot.org%2Fstory%2F23%2F09%2F02%2F0150234%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fscience.slashdot.org%2Fstory%2F23%2F09%2F02%2F0150234%2Fa-biotech-company-says-it-put-dopamine-making-cells-into-peoples-brains%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://science.slashdot.org/story/23/09/02/0150234/a-biotech-company-says-it-put-dopamine-making-cells-into-peoples-brains?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=23046765&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>BeauHD</dc:creator>
+<dc:date>2023-09-02T10:00:00+00:00</dc:date>
+<dc:subject>biotech</dc:subject>
+<slash:department>feel-good-stories</slash:department>
+<slash:section>science</slash:section>
+<slash:comments>3</slash:comments>
+<slash:hit_parade>3,3,1,1,0,0,0</slash:hit_parade>
+</item>
+<item rdf:about="https://entertainment.slashdot.org/story/23/09/02/0017225/pentagons-new-ufo-website-lets-you-explore-declassified-sightings-info?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Pentagon's New UFO Website Lets You Explore Declassified Sightings Info</title>
+<link>https://entertainment.slashdot.org/story/23/09/02/0017225/pentagons-new-ufo-website-lets-you-explore-declassified-sightings-info?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>The U.S. Department of Defense has launched a website collecting publicly available, declassified information on unidentified anomalous phenomena (UAPs). "For now, the general public will be able to read through the posted information," reports CNET. "Soon, US government employees, contractors, and service members with knowledge of US programs can report their own sightings, and later, others will be able to submit reports." From the report: "This website will provide information, including photos and videos, on resolved UAP cases as they are declassified and approved for public release," the department said in a release posted on Thursday. "The website's other content includes reporting trends and a frequently asked questions section as well as links to official reports, transcripts, press releases, and other resources that the public may find useful, such as applicable statutes and aircraft, balloon and satellite tracking sites."
+ 
+For now, one of the most interesting parts of the site is its trends section. Apparently, most reported UAPs are round, either white, silver or translucent, spotted at around 10,000 to 30,000 feet, 1-4 meters in size, and do not emit thermal exhaust. Hotspots for sightings include both the US East and West coasts. There's also a small section of videos with names such as "DVIDS Video - Unresolved Case: Navy 2021 Flyby," and "UAP Video: Middle East Object." Readers are able to leave comments on the videos. Of the "Middle East Object" video, one person writes,"Noticed I never saw it cast a shadow. But other objects have shadows."&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Pentagon's+New+UFO+Website+Lets+You+Explore+Declassified+Sightings+Info%3A+https%3A%2F%2Fentertainment.slashdot.org%2Fstory%2F23%2F09%2F02%2F0017225%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fentertainment.slashdot.org%2Fstory%2F23%2F09%2F02%2F0017225%2Fpentagons-new-ufo-website-lets-you-explore-declassified-sightings-info%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://entertainment.slashdot.org/story/23/09/02/0017225/pentagons-new-ufo-website-lets-you-explore-declassified-sightings-info?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=23046743&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>BeauHD</dc:creator>
+<dc:date>2023-09-02T07:00:00+00:00</dc:date>
+<dc:subject>scifi</dc:subject>
+<slash:department>fresh-insight</slash:department>
+<slash:section>entertainment</slash:section>
+<slash:comments>12</slash:comments>
+<slash:hit_parade>12,12,12,10,0,0,0</slash:hit_parade>
+</item>
+<item rdf:about="https://news.slashdot.org/story/23/09/02/0010246/population-collapse-almost-wiped-out-human-ancestors-say-scientists?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Population Collapse Almost Wiped Out Human Ancestors, Say Scientists</title>
+<link>https://news.slashdot.org/story/23/09/02/0010246/population-collapse-almost-wiped-out-human-ancestors-say-scientists?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>An anonymous reader quotes a report from The Guardian: Early human ancestors came close to eradication in a severe evolutionary bottleneck between 800,000 and 900,000 years ago, according to scientists. A genomics analysis of more than 3,000 living people suggested that our ancestors' total population plummeted to about 1,280 breeding individuals for about 117,000 years. Scientists believe that an extreme climate event could have led to the bottleneck that came close to wiping out our ancestral line. "The numbers that emerge from our study correspond to those of species that are currently at risk of extinction," said Prof Giorgio Manzi, an anthropologist at Sapienza University of Rome and a senior author of the research. However, Manzi and his colleagues believe that the existential pressures of the bottleneck could have triggered the emergence of a new species, Homo heidelbergensis, which some believe is the shared ancestor of modern humans and our cousins, the Neanderthals and Denisovans. Homo sapiens are thought to have emerged about 300,000 years ago. "It was lucky [that we survived], but we know from evolutionary biology that the emergence of a new species can happen in small, isolated populations," said Manzi.
+ 
+Prof Chris Stringer, the head of human origins at the Natural History Museum in London, who was not involved in the research, said: "It's an extraordinary length of time. It's remarkable that we did get through at all. For a population of that size, you just need one bad climate event, an epidemic, a volcanic eruption and you're gone." The decline appears to coincide with significant changes in global climate that turned glaciations into long-term events, a decrease in sea surface temperatures, and a possible long period of drought in Africa and Eurasia. The team behind the work said the time window also coincides with a relatively empty period on the fossil record. However, Stringer said there was not convincing evidence for a global "blank" in the fossil record of early humans, raising the possibility that whatever caused the bottleneck was a more local phenomenon. "Maybe this bottleneck population was stuck in some area of Africa surrounded by desert," he said. The findings have been published in the journal Science.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Population+Collapse+Almost+Wiped+Out+Human+Ancestors%2C+Say+Scientists%3A+https%3A%2F%2Fnews.slashdot.org%2Fstory%2F23%2F09%2F02%2F0010246%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fnews.slashdot.org%2Fstory%2F23%2F09%2F02%2F0010246%2Fpopulation-collapse-almost-wiped-out-human-ancestors-say-scientists%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://news.slashdot.org/story/23/09/02/0010246/population-collapse-almost-wiped-out-human-ancestors-say-scientists?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=23046731&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>BeauHD</dc:creator>
+<dc:date>2023-09-02T03:30:00+00:00</dc:date>
+<dc:subject>earth</dc:subject>
+<slash:department>that-was-a-close-one</slash:department>
+<slash:section>news</slash:section>
+<slash:comments>18</slash:comments>
+<slash:hit_parade>18,18,17,14,4,2,0</slash:hit_parade>
+</item>
+<item rdf:about="https://yro.slashdot.org/story/23/09/02/000207/nypd-to-deploy-drones-to-monitor-backyard-parties-this-holiday-weekend?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>NYPD To Deploy Drones To Monitor Backyard Parties This Holiday Weekend</title>
+<link>https://yro.slashdot.org/story/23/09/02/000207/nypd-to-deploy-drones-to-monitor-backyard-parties-this-holiday-weekend?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>"The NYC police department intends to use drones to monitor Labor Day backyard parties, raising privacy concerns," writes Slashdot reader jjslash. "Drone usage by U.S. police departments is increasing, with some operating them beyond visual line of sight. TechSpot reports: "If a caller states there's a large crowd, a large party in a backyard, we're going to be utilizing our assets to go up and go check on the party," said assistant NYPD Commissioner Kaz Daughtry at a recent press conference. Naturally, the admission attracted the attention of privacy and civil liberties advocates who questioned if the department's plans violate existing laws governing surveillance in the area.
+ 
+In its unmanned aircraft systems (UAS): Impact and use policy from 2021, the NYC police department said drones would not be used in areas where there is a reasonable expectation of privacy without a search warrant, except in exigent circumstances (PDF). Are backyard parties really all that pressing? "Deploying drones in this way is a sci-fi inspired scenario," said Daniel Schwarz, a technology and privacy strategist with the New York Civil Liberties Union. Schwarz added that it is at variance with the Public Oversight of Surveillance Technology (POST) Act, which "requires the reporting and evaluation of surveillance technologies used by the NYPD."&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=NYPD+To+Deploy+Drones+To+Monitor+Backyard+Parties+This+Holiday+Weekend%3A+https%3A%2F%2Fyro.slashdot.org%2Fstory%2F23%2F09%2F02%2F000207%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fyro.slashdot.org%2Fstory%2F23%2F09%2F02%2F000207%2Fnypd-to-deploy-drones-to-monitor-backyard-parties-this-holiday-weekend%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://yro.slashdot.org/story/23/09/02/000207/nypd-to-deploy-drones-to-monitor-backyard-parties-this-holiday-weekend?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=23046727&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>BeauHD</dc:creator>
+<dc:date>2023-09-02T02:02:00+00:00</dc:date>
+<dc:subject>crime</dc:subject>
+<slash:department>heads-up</slash:department>
+<slash:section>yro</slash:section>
+<slash:comments>49</slash:comments>
+<slash:hit_parade>49,47,41,34,15,4,0</slash:hit_parade>
+</item>
+<item rdf:about="https://yro.slashdot.org/story/23/09/01/2315228/microsoft-patents-sensor-filled-ai-assisted-backpack?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Microsoft Patents Sensor-Filled, AI-Assisted Backpack</title>
+<link>https://yro.slashdot.org/story/23/09/01/2315228/microsoft-patents-sensor-filled-ai-assisted-backpack?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>Microsoft has patented an AI-powered backpack design featuring a plethora of sensors that may include cameras, microphones, GPS, and a compass. Tom's Hardware reports: Additionally, Microsoft thinks it may be useful to add in LEDs and speakers, as well as a haptic actuator, into the straps. Some real-time processing is deemed necessary to the smart wearable. Thus, various recognition modules are proposed to provide image, text, speech, facial, and cognitive recognition. As well as real-time monitors feeding data to the built-in processing power for AI smarts, the system housed in the backpack also will boast a recording device (using on-board storage), wireless connectivity, battery power / charging and more.
+ 
+With all the above sensing and processing on your person, in the backpack, it is envisioned that wearers will benefit from AI enhanced object identification and analysis, nearby device interaction, and be able to gain contextual insights. A flow chart shows how the backpack and its data feed might work alongside personal computers and cloud servers. Other illustrations show the wandering backpack wearer navigating a ski resort, and checking out supermarket prices, as well as considering booking concert tickets. Sometimes the user may interact with the backpack's on-board AI via speech, e.g. "Hey Backpack, add this poster to my calendar." Alternatively some AI actions or contextual tasks may be instigated by interacting with sensors on the straps. You can view the patent application here.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Microsoft+Patents+Sensor-Filled%2C+AI-Assisted+Backpack%3A+https%3A%2F%2Fyro.slashdot.org%2Fstory%2F23%2F09%2F01%2F2315228%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fyro.slashdot.org%2Fstory%2F23%2F09%2F01%2F2315228%2Fmicrosoft-patents-sensor-filled-ai-assisted-backpack%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://yro.slashdot.org/story/23/09/01/2315228/microsoft-patents-sensor-filled-ai-assisted-backpack?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=23046703&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>BeauHD</dc:creator>
+<dc:date>2023-09-02T01:25:00+00:00</dc:date>
+<dc:subject>patents</dc:subject>
+<slash:department>AI-all-the-things</slash:department>
+<slash:section>yro</slash:section>
+<slash:comments>9</slash:comments>
+<slash:hit_parade>9,9,9,7,1,0,0</slash:hit_parade>
+</item>
+<item rdf:about="https://news.slashdot.org/story/23/09/01/237204/caltech-to-accept-khan-academy-success-as-option-for-admission?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>CalTech To Accept Khan Academy Success As Option For Admission</title>
+<link>https://news.slashdot.org/story/23/09/01/237204/caltech-to-accept-khan-academy-success-as-option-for-admission?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>"Given that too many schools don't teach calculus, chemistry and physics, CalTech is allowing potential undergraduates to demonstrate their ability in these fields by using Khan Academy," writes Slashdot reader Bruce66423. Los Angeles Times reports: One of Caltech's alternative paths is taking Khan Academy's free, online classes and scoring 90% or higher on a certification test. Sal Khan, academy founder, said Caltech's action is a "huge deal" for equitable access to college. While Caltech is small -- only 2,400 students, about 40% of them undergraduates -- Khan said he hoped its prestigious reputation would encourage other institutions to examine their admission barriers and find creative solutions to ease them. The Pasadena-based institute, with a 3% admission rate last year, boasts 46 Nobel laureates and cutting-edge research in such fields as earthquake engineering, behavioral genetics, geochemistry, quantum information and aerospace. "You have one of the most academically rigorous schools on the planet that has arguably one of the highest bars for admission, saying that an alternative pathway that is free and accessible to anyone is now a means to meeting their requirements," said Khan, whose nonprofit offers free courses, test prep and tutoring to more than 152 million users. [...]
+ 
+The impetus for the policy change began in February, when Pallie, the admissions director, and two Caltech colleagues attended a workshop on equity hosted by the National Assn. for College Admission Counseling. They were particularly struck by one speaker, Melodie Baker of Just Equations, a nonprofit that seeks to widen math opportunities. As Baker pointed out the lack of access to calculus for many students, Pallie and her team began to question Caltech's admission requirement for the course, along with physics and chemistry. Pallie and Jared Leadbetter, a professor of environmental microbiology who heads the faculty admissions committee, began to look into potential course alternatives. Pallie connected with Khan's team, which started a second nonprofit, Schoolhouse.world, during the pandemic in 2020 to offer free tutoring. Peer tutors on the platform certify they are qualified for their jobs by scoring at least 90% on the course exam and videotaping themselves explaining how they solved each problem on it. The video helps ensure that the students actually took the exam themselves and understand the material. That video feature gave Caltech assurances about the integrity of the alternative path.
+ 
+Under the new process, students would take a calculus, physics or chemistry class offered by Khan Academy and use the Schoolhouse platform to certify their mastery of the content as tutors do with a 90% score or better on the exam and a videotaped explanation of their reasoning. Proof of certification is required within one week of the application deadline, which is in November for early action and January for regular decisions. Pallie and Leadbetter also wanted to test whether the Khan Academy courses are sufficiently rigorous. Several Caltech undergraduates took the courses to assess whether all concepts were covered in enough breadth and depth to pass the campus placement exams in those subjects. Miranda, a rising Caltech junior studying mechanical engineering, took the calculus course and gave it a thumbs-up, although she added that students would probably want to use additional textbooks and other study materials to deepen their preparation for Caltech.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=CalTech+To+Accept+Khan+Academy+Success+As+Option+For+Admission%3A+https%3A%2F%2Fnews.slashdot.org%2Fstory%2F23%2F09%2F01%2F237204%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fnews.slashdot.org%2Fstory%2F23%2F09%2F01%2F237204%2Fcaltech-to-accept-khan-academy-success-as-option-for-admission%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://news.slashdot.org/story/23/09/01/237204/caltech-to-accept-khan-academy-success-as-option-for-admission?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=23046693&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>BeauHD</dc:creator>
+<dc:date>2023-09-02T00:45:00+00:00</dc:date>
+<dc:subject>education</dc:subject>
+<slash:department>new-admission-work-arounds</slash:department>
+<slash:section>news</slash:section>
+<slash:comments>13</slash:comments>
+<slash:hit_parade>13,13,12,12,4,0,0</slash:hit_parade>
+</item>
+<item rdf:about="https://hardware.slashdot.org/story/23/09/01/2246211/nissan-begins-repurposing-leaf-car-batteries-as-portable-power-stations?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Nissan Begins Repurposing Leaf Car Batteries As Portable Power Stations</title>
+<link>https://hardware.slashdot.org/story/23/09/01/2246211/nissan-begins-repurposing-leaf-car-batteries-as-portable-power-stations?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>An anonymous reader quotes a report from ExtremeTech: Slowly but surely, sales of electric cars have crept upward as traditional automakers finally embrace EVs. Nissan was early to the electric future with the venerable if modest Leaf. Nissan is now looking to turn old Leafs into something new by harvesting their batteries. The company has begun selling portable power banks built around refurbished automotive batteries, which could give these expensive Leaf cells a new lease on life. The Lithium-ion cells in vehicles have the same properties as the battery in your phone. They start out with a specific power rating, but successive discharge-recharge cycles cause physical stress to the internal structure. Eventually, this results in reduced capacity and voltage. However, Nissan says most Leaf owners stop driving the car before the battery stops working. In fact, many of the individual cells are still in good shape when the vehicles are discarded.
+ 
+Each Nissan Leaf has around 48 lithium-ion battery modules -- the exact number depends on model. While some may be in poor shape at the end of a car's life, Nissan has taken to disassembling the battery packs to refurbish working modules. The result is the Nissan portable power station, which was developed in partnership with JVCKenwood Corp. and 4R Energy Corp. The bulky 32-pound portable chargers contain two Leaf battery modules with about 80% of their original capacity intact. They're no longer suitable for driving an EV, but they can still charge your phone. Nissan sells the battery packs in Japan for 170,500 yen (about $1,170). That might sound like a lot, but it's actually not bad for a super high-capacity battery pack. Each of Nissan's current-gen battery modules is 1.67 kWh, which converts to 112 Ah (112,000 mAh). Assuming a 20% loss in capacity, two of them would have enough juice to charge the largest current iPhone more than 40 times.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Nissan+Begins+Repurposing+Leaf+Car+Batteries+As+Portable+Power+Stations%3A+https%3A%2F%2Fhardware.slashdot.org%2Fstory%2F23%2F09%2F01%2F2246211%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fhardware.slashdot.org%2Fstory%2F23%2F09%2F01%2F2246211%2Fnissan-begins-repurposing-leaf-car-batteries-as-portable-power-stations%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://hardware.slashdot.org/story/23/09/01/2246211/nissan-begins-repurposing-leaf-car-batteries-as-portable-power-stations?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=23046675&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>BeauHD</dc:creator>
+<dc:date>2023-09-02T00:02:00+00:00</dc:date>
+<dc:subject>power</dc:subject>
+<slash:department>new-lease-on-life</slash:department>
+<slash:section>hardware</slash:section>
+<slash:comments>28</slash:comments>
+<slash:hit_parade>28,28,27,23,6,1,1</slash:hit_parade>
+</item>
+<item rdf:about="https://hardware.slashdot.org/story/23/09/01/2239233/lenovos-new-27-inch-4k-monitor-offers-glasses-free-3d?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Lenovo's New 27-inch, 4K Monitor Offers Glasses-Free 3D</title>
+<link>https://hardware.slashdot.org/story/23/09/01/2239233/lenovos-new-27-inch-4k-monitor-offers-glasses-free-3d?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>Lenovo's upcoming 27-inch 4K monitor offers a unique experience unlike any other display: glasses-free 3D that can be toggled on and off. According to Ars Technica, the monitor features a lenticular lens and real-time eye-tracking to create the effect. It's being targeted at content creators, like 3D graphic designers and developers. From the report: Like other glasses-less 3D screens, [Lenovo's ThinkVision 27 3D Monitor] works by projecting two different images to each of your eyes, resulting in a 3D effect where, as PR images would have you believe, it appears that the images are popping out of the screen. Lenovo says the monitor's 3D resolution is 1920x2160. The lenticular lens in the monitor is switchable, allowing for normal, 2D viewing at 3840x2160, too. The ThinkVision's 27-inch display gives workers a bigger palette. It also means the monitor can be a regular 2D monitor when needed. [...]
+ 
+As a regular 2D monitor, the ThinkVision's specs are pretty standard. It's a 4K IPS screen claiming a 60 Hz refresh rate, 310 nits, a 1,000:1 contrast ratio, and 99 percent DCI-P3 and Adobe RGB color coverage with a Delta E under 2. Like a proper workplace monitor, there's also a strong port selection: two HDMI 2.1, one DisplayPort 1.4, four USB-A (3.1 Gen 1) ports, one USB-C port (3.2 Gen 1) with up to 15 W power delivery, RJ45, a 3.5mm jack, plus an upstream USB-C port with up to 100 W power delivery.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Lenovo's+New+27-inch%2C+4K+Monitor+Offers+Glasses-Free+3D%3A+https%3A%2F%2Fhardware.slashdot.org%2Fstory%2F23%2F09%2F01%2F2239233%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fhardware.slashdot.org%2Fstory%2F23%2F09%2F01%2F2239233%2Flenovos-new-27-inch-4k-monitor-offers-glasses-free-3d%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://hardware.slashdot.org/story/23/09/01/2239233/lenovos-new-27-inch-4k-monitor-offers-glasses-free-3d?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=23046671&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>BeauHD</dc:creator>
+<dc:date>2023-09-01T23:20:00+00:00</dc:date>
+<dc:subject>displays</dc:subject>
+<slash:department>not-sponsored</slash:department>
+<slash:section>hardware</slash:section>
+<slash:comments>8</slash:comments>
+<slash:hit_parade>8,8,8,6,2,0,0</slash:hit_parade>
+</item>
+<item rdf:about="https://yro.slashdot.org/story/23/09/01/2227255/robinhood-bought-back-sam-bankman-frieds-stake-from-us-government-for-606-million?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Robinhood Bought Back Sam Bankman-Fried's Stake From US Government For $606 Million</title>
+<link>https://yro.slashdot.org/story/23/09/01/2227255/robinhood-bought-back-sam-bankman-frieds-stake-from-us-government-for-606-million?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>Robinhood announced it has purchased more than 55 million shares of the firm previously held by former FTX CEO Sam Bankman-Fried, which were seized in January by the U.S. Department of Justice as part of the criminal case against FTX and its executives. CoinTelegraph reports: The purchase had been expected. Robinhood's board of directors announced the approval of the deal in the company's Q4 2022 report, and an Aug. 30 SEC filing said the U.S. District Court for the Southern District of New York had approved the purchase "free and clear of any claims, interests, liens and encumbrances." Robinhood made the repurchase agreement with the U.S. Marshals Service. "We are happy to have completed the purchase of these shares and look forward to executing on our growth plans on behalf of our customers and shareholders," said Robinhood chief financial officer Jason Warnick.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Robinhood+Bought+Back+Sam+Bankman-Fried's+Stake+From+US+Government+For+%24606+Million%3A+https%3A%2F%2Fyro.slashdot.org%2Fstory%2F23%2F09%2F01%2F2227255%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fyro.slashdot.org%2Fstory%2F23%2F09%2F01%2F2227255%2Frobinhood-bought-back-sam-bankman-frieds-stake-from-us-government-for-606-million%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://yro.slashdot.org/story/23/09/01/2227255/robinhood-bought-back-sam-bankman-frieds-stake-from-us-government-for-606-million?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=23046663&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>BeauHD</dc:creator>
+<dc:date>2023-09-01T22:40:00+00:00</dc:date>
+<dc:subject>business</dc:subject>
+<slash:department>purchase-approvals</slash:department>
+<slash:section>yro</slash:section>
+<slash:comments>10</slash:comments>
+<slash:hit_parade>10,10,8,7,2,1,0</slash:hit_parade>
+</item>
+<item rdf:about="https://yro.slashdot.org/story/23/09/01/2139242/hacker-gains-admin-control-of-sourcegraph-and-gives-free-access-to-the-masses?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Hacker Gains Admin Control of Sourcegraph and Gives Free Access To the Masses</title>
+<link>https://yro.slashdot.org/story/23/09/01/2139242/hacker-gains-admin-control-of-sourcegraph-and-gives-free-access-to-the-masses?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>An anonymous reader quotes a report from Ars Technica: An unknown hacker gained administrative control of Sourcegraph, an AI-driven service used by developers at Uber, Reddit, Dropbox, and other companies, and used it to provide free access to resources that normally would have required payment. In the process, the hacker(s) may have accessed personal information belonging to Sourcegraph users, Diego Comas, Sourcegraph's head of security, said in a post on Wednesday. For paid users, the information exposed included license keys and the names and email addresses of license key holders. For non-paying users, it was limited to email addresses associated with their accounts. Private code, emails, passwords, usernames, or other personal information were inaccessible.
+ 
+The hacker gained administrative access by obtaining an authentication key a Sourcegraph developer accidentally included in a code published to a public Sourcegraph instance hosted on Sourcegraph.com. After creating a normal user Sourcegraph account, the hacker used the token to elevate the account privileges to those of an administrator. The access token appeared in a pull request posted on July 14, the user account was created on August 28, and the elevation to admin occurred on August 30. "The malicious user, or someone connected to them, created a proxy app allowing users to directly call Sourcegraph's APIs and leverage the underlying LLM [large language model]," Comas wrote. "Users were instructed to create free Sourcegraph.com accounts, generate access tokens, and then request the malicious user to greatly increase their rate limit. On August 30 (2023-08-30 13:25:54 UTC), the Sourcegraph security team identified the malicious site-admin user, revoked their access, and kicked off an internal investigation for both mitigation and next steps."
+ 
+The resource free-for-all generated a spike in calls to Sourcegraph programming interfaces, which are normally rate-limited for free accounts. "The promise of free access to Sourcegraph API prompted many to create accounts and start using the proxy app," Comas wrote. "The app and instructions on how to use it quickly made its way across the web, generating close to 2 million views. As more users discovered the proxy app, they created free Sourcegraph.com accounts, adding their access tokens, and accessing Sourcegraph APIs illegitimately." [...] While most data was available for all paid and community users, the number of license keys exposed was limited to 20.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Hacker+Gains+Admin+Control+of+Sourcegraph+and+Gives+Free+Access+To+the+Masses%3A+https%3A%2F%2Fyro.slashdot.org%2Fstory%2F23%2F09%2F01%2F2139242%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fyro.slashdot.org%2Fstory%2F23%2F09%2F01%2F2139242%2Fhacker-gains-admin-control-of-sourcegraph-and-gives-free-access-to-the-masses%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://yro.slashdot.org/story/23/09/01/2139242/hacker-gains-admin-control-of-sourcegraph-and-gives-free-access-to-the-masses?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=23046641&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>BeauHD</dc:creator>
+<dc:date>2023-09-01T22:00:00+00:00</dc:date>
+<dc:subject>privacy</dc:subject>
+<slash:department>free-for-all</slash:department>
+<slash:section>yro</slash:section>
+<slash:comments>5</slash:comments>
+<slash:hit_parade>5,5,5,2,1,0,0</slash:hit_parade>
+</item>
+<item rdf:about="https://it.slashdot.org/story/23/09/01/1955206/samsung-unveils-industrys-first-32gbit-ddr5-memory-die?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Samsung Unveils Industry's First 32Gbit DDR5 Memory Die</title>
+<link>https://it.slashdot.org/story/23/09/01/1955206/samsung-unveils-industrys-first-32gbit-ddr5-memory-die?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>Samsung today revealed the world's first 32 Gb DDR5 DRAM die. From a report: The new memory die is made on the company's 12 nm-class DRAM fabrication process and not only offers increased density, but also lowers power consumption. The chip will allow Samsung to build record 1 TB RDIMMs for servers as well as lower costs of high-capacity memory modules. "With our 12nm-class 32 Gb DRAM, we have secured a solution that will enable DRAM modules of up to 1 TB, allowing us to be ideally positioned to serve the growing need for high-capacity DRAM in the era of AI (Artificial Intelligence) and big data," said SangJoon Hwang, executive vice president of DRAM product &amp;amp; technology at Samsung Electronics. 
+
+32 Gb memory dies not only enable Samsung to build a regular, single-rank 32 GB module for client PCs using only eight single-die memory chips, but they also allow for higher capacity DIMMs that were not previously possible. We are talking about 1 TB memory modules using 40 8-Hi 3DS memory stacks based on eight 32 Gb memory devices. Such modules may sound overkill, but for artificial intelligence (AI), Big Data, and database servers, more DRAM capacity can easily be put to good use. Eventually, 1TB RDIMMs would allow for up to 12 TB of memory in a single socket server (e.g. AMD's EPYC 9004 platform), something that cannot be done now.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Samsung+Unveils+Industry's+First+32Gbit+DDR5+Memory+Die%3A+https%3A%2F%2Fit.slashdot.org%2Fstory%2F23%2F09%2F01%2F1955206%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fit.slashdot.org%2Fstory%2F23%2F09%2F01%2F1955206%2Fsamsung-unveils-industrys-first-32gbit-ddr5-memory-die%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://it.slashdot.org/story/23/09/01/1955206/samsung-unveils-industrys-first-32gbit-ddr5-memory-die?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=23046565&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>msmash</dc:creator>
+<dc:date>2023-09-01T21:20:00+00:00</dc:date>
+<dc:subject>it</dc:subject>
+<slash:department>feed-and-speed</slash:department>
+<slash:section>it</slash:section>
+<slash:comments>17</slash:comments>
+<slash:hit_parade>17,17,12,11,4,2,1</slash:hit_parade>
+</item>
+<item rdf:about="https://slashdot.org/story/23/09/01/1937248/nvidia-quietly-cuts-price-of-poorly-reviewed-16gb-4060-ti-ahead-of-amd-launch?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Nvidia Quietly Cuts Price of Poorly Reviewed 16GB 4060 Ti Ahead of AMD Launch</title>
+<link>https://slashdot.org/story/23/09/01/1937248/nvidia-quietly-cuts-price-of-poorly-reviewed-16gb-4060-ti-ahead-of-amd-launch?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>An anonymous reader shares a report: AMD last week announced what are probably the last major GPU launches of this generation of graphics cards: the $449 Radeon RX 7700 XT and $499 Radeon RX 7800 XT. AMD's pricing and performance numbers pit the cards against Nvidia's GeForce RTX 4060 Ti (specifically the $499 16GB version) and the $599 RTX 4070. AMD's pricing is aggressive enough that Nvidia is quietly cutting the prices of some 16GB RTX 4060 Ti cards to $449, to match the RX 7700 XT. 
+
+The announcement about the $50 reduction was buried toward the bottom of an email that Nvidia sent to GPU reviewers ahead of AMD's launch next week; it also drew attention to Nvidia-specific features like DLSS upscaling and frame generation, which compete with AMD's GPU-agnostic FSR, plus recent DLSS improvements that improve ray-tracing performance.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Nvidia+Quietly+Cuts+Price+of+Poorly+Reviewed+16GB+4060+Ti+Ahead+of+AMD+Launch%3A+https%3A%2F%2Fslashdot.org%2Fstory%2F23%2F09%2F01%2F1937248%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fslashdot.org%2Fstory%2F23%2F09%2F01%2F1937248%2Fnvidia-quietly-cuts-price-of-poorly-reviewed-16gb-4060-ti-ahead-of-amd-launch%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://slashdot.org/story/23/09/01/1937248/nvidia-quietly-cuts-price-of-poorly-reviewed-16gb-4060-ti-ahead-of-amd-launch?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=23046541&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>msmash</dc:creator>
+<dc:date>2023-09-01T20:40:00+00:00</dc:date>
+<dc:subject>amd</dc:subject>
+<slash:department>competition-intensifies</slash:department>
+<slash:section>slashdot</slash:section>
+<slash:comments>12</slash:comments>
+<slash:hit_parade>12,12,9,8,3,2,0</slash:hit_parade>
+</item>
+<item rdf:about="https://science.slashdot.org/story/23/09/01/1838208/india-seeks-to-top-its-moon-landing-with-spacecraft-to-study-sun?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>India Seeks To Top Its Moon Landing with Spacecraft To Study Sun</title>
+<link>https://science.slashdot.org/story/23/09/01/1838208/india-seeks-to-top-its-moon-landing-with-spacecraft-to-study-sun?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>Hot on the heels of its lunar landing success, India is readying to blast a probe even deeper into space to study the sun. From a report: The country's first solar observation mission, named Aditya-L1, is set to be launched from India's main spaceport on Sriharikota, an island off the southern state of Andhra Pradesh, at 11:50 a.m. local time on Saturday. The spacecraft is scheduled to spend 125 days traveling 1.5 million kilometers (932,000 miles) to its destination, a point in space where objects stay put and consume less fuel. 
+
+While arriving there would be an impressive achievement for ISRO, the Indian space agency, Aditya-L1 would have gone just a fraction of the 150 million km between Earth and the sun. For ISRO, success would be another major feat after India became the first country to land a spacecraft close to the lunar south pole in August. India has more ambitious projects in the works. A human spaceflight program aims to launch astronauts into orbit for the first time possibly by 2025, ISRO Chairman S Somanath said in an interview with news agency Asian News International. ISRO and NASA plan to cooperate on sending astronauts to the International Space Station and India is in discussions with Japan to work together on a mission.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=India+Seeks+To+Top+Its+Moon+Landing+with+Spacecraft+To+Study+Sun%3A+https%3A%2F%2Fscience.slashdot.org%2Fstory%2F23%2F09%2F01%2F1838208%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fscience.slashdot.org%2Fstory%2F23%2F09%2F01%2F1838208%2Findia-seeks-to-top-its-moon-landing-with-spacecraft-to-study-sun%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://science.slashdot.org/story/23/09/01/1838208/india-seeks-to-top-its-moon-landing-with-spacecraft-to-study-sun?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=23046479&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>msmash</dc:creator>
+<dc:date>2023-09-01T20:00:00+00:00</dc:date>
+<dc:subject>space</dc:subject>
+<slash:department>space-quest</slash:department>
+<slash:section>science</slash:section>
+<slash:comments>15</slash:comments>
+<slash:hit_parade>15,15,11,9,1,1,0</slash:hit_parade>
+</item>
+<item rdf:about="https://news.slashdot.org/story/23/09/01/1828253/japan-is-preparing-for-a-massive-earthquake?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Japan is Preparing For a Massive Earthquake</title>
+<link>https://news.slashdot.org/story/23/09/01/1828253/japan-is-preparing-for-a-massive-earthquake?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>The centenary of the Great Kanto earthquake brings angst, and lessons for the world. From a report: Every year on September 1st, Japan's ministers trek by foot to the prime minister's office to take part in a crisis simulation. Across the country, local officials and schoolchildren drill for disasters. The date marks the Great Kanto earthquake, a 7.9-magnitude tremor that struck near the capital back in 1923. The ensuing disaster killed at least 105,000 people, including around 70,000 in Tokyo itself, destroyed 370,000 homes and changed the course of Japanese history. 
+
+This year's centenary of the disaster has occasioned much commemoration -- and angst. What will happen when the next Big One hits? Seismologists cannot predict earthquakes, but their statistical models, which are based on past patterns, can estimate the likelihood of one. The city government's experts reckon there is a 70% chance of a magnitude 7 or higher quake hitting the capital within the next 30 years. Far fewer people will probably die than during the disaster in 1923, thanks to better technology and planning: the worst case foresees some 6,000 deaths in the city. But millions of lives will be upended. 
+
+Another, similarly likely scenario could be much worse. A Nankai Trough earthquake, envisaged south of Kansai, Japan's industrial heartland, could trigger a tsunami; as many as 323,000 might be killed, according to an official estimate. Japan's approach to the risks of such catastrophes offers insights for a warming world facing more frequent disasters. Quakes of this size could "challenge the survival of Japan as a state" and send economic shock waves around the globe, says Fukuwa Nobuo of Nagoya University. After the next Tokyo quake, recovering basic city functions could take weeks and rebuilding the capital could take years; direct damage alone could run to as much as $75bn. One piece of research estimates that gdp would dip by 11% following a Nankai earthquake.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Japan+is+Preparing+For+a+Massive+Earthquake%3A+https%3A%2F%2Fnews.slashdot.org%2Fstory%2F23%2F09%2F01%2F1828253%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fnews.slashdot.org%2Fstory%2F23%2F09%2F01%2F1828253%2Fjapan-is-preparing-for-a-massive-earthquake%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://news.slashdot.org/story/23/09/01/1828253/japan-is-preparing-for-a-massive-earthquake?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=23046457&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>msmash</dc:creator>
+<dc:date>2023-09-01T19:20:00+00:00</dc:date>
+<dc:subject>earth</dc:subject>
+<slash:department>closer-look</slash:department>
+<slash:section>news</slash:section>
+<slash:comments>13</slash:comments>
+<slash:hit_parade>13,13,12,11,5,4,1</slash:hit_parade>
+</item>
+<item rdf:about="https://entertainment.slashdot.org/story/23/09/01/1748216/spotify-to-cut-back-promotional-spending-on-white-noise-podcasts?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Spotify To Cut Back Promotional Spending on White Noise Podcasts</title>
+<link>https://entertainment.slashdot.org/story/23/09/01/1748216/spotify-to-cut-back-promotional-spending-on-white-noise-podcasts?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>Spotify is cracking down on white-noise podcasters, reducing the advertising support for programmers that provide little more than soothing sounds like rain or chirping birds. From a report: In an email to creators Friday, the company highlighted changes to its Ambassador Ads program -- promotional spots for Spotify that podcasters read. The company pays hosts to read ads to encourage more creators to make shows and join the platform. As part of the change taking effect Oct. 1, white noise podcasters will no longer be eligible for such support, according to a person with knowledge of the matter. The company is also raising the audience threshold that conventional podcasters must meet to qualify for those ads to 1,000 unique Spotify listeners over the past 60 days from 100.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Spotify+To+Cut+Back+Promotional+Spending+on+White+Noise+Podcasts%3A+https%3A%2F%2Fentertainment.slashdot.org%2Fstory%2F23%2F09%2F01%2F1748216%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fentertainment.slashdot.org%2Fstory%2F23%2F09%2F01%2F1748216%2Fspotify-to-cut-back-promotional-spending-on-white-noise-podcasts%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://entertainment.slashdot.org/story/23/09/01/1748216/spotify-to-cut-back-promotional-spending-on-white-noise-podcasts?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=23046409&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>msmash</dc:creator>
+<dc:date>2023-09-01T18:40:00+00:00</dc:date>
+<dc:subject>business</dc:subject>
+<slash:department>bizarro-world</slash:department>
+<slash:section>entertainment</slash:section>
+<slash:comments>36</slash:comments>
+<slash:hit_parade>36,36,32,27,6,1,0</slash:hit_parade>
+</item>
+<textinput rdf:about="https://slashdot.org/search.pl">
+<title>Search Slashdot</title>
+<description>Search Slashdot stories</description>
+<name>query</name>
+<link>https://slashdot.org/search.pl</link>
+</textinput>
+</rdf:RDF>
